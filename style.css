@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 80px;
+}
+
+#intro-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#intro-text :first-child{
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+
+#intro-text :last-child{
+    width: 500px;
+    margin-top: 20px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+    border-top: 4px solid black;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#supervisor-card{
+    border-color: hsl(180, 62%, 55%);
+}
+
+#builder-card{
+    border-color: hsl(0, 78%, 62%);
+}
+
+#karma-card{
+    border-color: hsl(34, 97%, 64%);
+}
+
+#calculator-card{
+    border-color: hsl(212, 86%, 64%);
+}
+
+.card-img{
+    width: 80px;
+    align-self: flex-end;
+}
+
+h1{
+    font-size: 35px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+h3{
+    color: hsl(233, 13%, 26%);
+    font-weight: 600;
+}
+
+p{
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.attribution{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: 25px;
+    }
+
+    #intro-text{
+        margin-top: 70px;
+    }
+
+    #intro-text :last-child{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 475px){
+    article{
+        align-items: center;
+    }
+
+    .card{
+        width: 85%;
+        height: 250px;
+    }
+
+    .card-img{
+        width: 65px;
+    }
+
+}
